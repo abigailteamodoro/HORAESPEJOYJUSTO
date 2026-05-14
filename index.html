@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Acceso</title>
+
+<style>
+body{
+background:black;
+color:white;
+font-family:Arial;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+flex-direction:column;
+}
+
+input{
+padding:10px;
+border-radius:10px;
+border:none;
+}
+
+button{
+margin-top:10px;
+padding:10px;
+border:none;
+border-radius:10px;
+}
+
+#mensaje{
+display:none;
+margin-top:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>ACCESS REQUIRED</h1>
+
+<input type="password" id="clave">
+
+<button onclick="verificar()">Entrar</button>
+
+<div id="mensaje">
+<h2>USER: ABIGAIL. CONTRA: 3MESES</h2>
+</div>
+
+<script>
+
+function verificar(){
+
+let clave = document.getElementById("clave").value;
+
+if(clave === "14021405"){
+document.getElementById("mensaje").style.display = "block";
+}else{
+alert("Código incorrecto");
+}
+
+}
+
+</script>
+
+</body>
+</html>
